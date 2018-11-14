@@ -1,4 +1,4 @@
-使用typeScript
+不使用typeScript
 # npm script
 $ npm run dev:weapp
 $ npm run build:weapp
