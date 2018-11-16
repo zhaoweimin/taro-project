@@ -1,0 +1,218 @@
+// sass 变量定义
+$main: #FFCC00;
+$bg: #F2F2F2;
+
+$black: #000000;
+$white: #ffffff;
+$darkgrey: #353535;
+$grey: #888888;
+$gray: #AEAEAE;
+$lightgrey: #d7d7d7;
+$grayline: #f6f6f6;
+$blue: #6699FF;
+$red: #d95940;
+$yellow : #FFCC00;
+$green: #36b36c;
+
+$wxgreen: #46c01b;
+
+$success: #669900;
+$rgbablack: rgba(0,0,0,.6);
+$rgbawhite: rgba(255,255,255,.8);
+$bluegreen: #0099CC;
+
+$tipscolor: #d7d7d7;
+
+$maxfz: 54rpx;
+$bigfz: 40rpx;
+$midfz: 28rpx;
+$minfz: 24rpx;
+
+
+image{
+    display: inline-block;
+}
+// 颜色
+
+.cmain{
+    color: $main !important;
+}
+.cred{
+    color: $red !important;
+}
+.cgey{
+    color: $grey !important;
+}
+.clink{
+    color: $blue !important;
+}
+.csuccess{
+  color: $success !important;
+}
+.cwhite{
+	color: $white !important;
+}
+.cblue-green{
+    color: $bluegreen !important;
+}
+.c-bold{
+    font-weight: bold;
+}
+
+.bg-c-bg{
+    background: $bg;
+}
+.bg-white{
+    background: $white;
+}
+.bg-green{
+    background: #36b36c;
+}
+.bg-blue{
+    background: #58C3E5;
+}
+.img-bg{
+    background: #f2f2f2;
+    background-image: url(http://cos.caihongapi.com/p/bg/img_icon.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+}
+//布局
+.dis-box{
+  	display:flex;
+}
+.dis-flex{
+    display: flex;
+}
+.flex-1{
+    flex:1;
+}
+.flex-2{
+    flex:2;
+}
+.flex-3{
+    flex:3;
+}
+.rel{
+    position: relative;
+}
+.abs{
+    position: absolute;
+}
+.over-flow-ellipsis{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+.over-flow-ellipsis-2{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.over-flow-ellipsis-3{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+.btn{
+    position:relative;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:30rpx;
+    padding-right:30rpx;
+    box-sizing:border-box;
+    font-size:18px;
+    text-align:center;
+    text-decoration:none;
+    line-height:44px;
+    border-radius:5px;
+    -webkit-tap-highlight-color:transparent;
+    overflow:hidden;
+    color:#000000;
+    background-color:#F8F8F8;
+    margin: 10rpx;
+}
+.btn-small{
+    font-size: 24rpx;
+    line-height: 60rpx;
+}
+.btn-green{
+    background: #36b36c;
+    color: #ffffff;
+}
+.btn-blue{
+    background: #58C3E5;
+    color: #ffffff;
+}
+.btn-danger{
+    background: #D95940;
+    color: #ffffff;
+}
+.btn-main{
+    background: #FDBD57;
+    color: #ffffff;
+}
+// end 
+.footer-btn-bar{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.footer-btn-bar .btn{
+    margin: 0rpx;
+    border-radius:0px;
+}
+// 去除button 的 border
+.btn-main::after,
+.btn-blue::after,
+.btn-green::after {
+    border: 0;
+}
+// 文档布局
+.ta-c{
+    text-align: center;
+}
+.ta-l{
+    text-align: left;
+}
+.ta-r{
+    text-align: right;
+}
+
+// 间距
+.mg-top{
+    margin-top: 20rpx;
+}
+.after-line-bottom{
+    position: relative;
+}
+.after-line-bottom::after{
+    content: "";
+    position: absolute;
+    left: 30rpx;
+    right: 0rpx;
+    bottom: 0;
+    height: 1px;
+    background: $grayline;
+}
+.after-line-bottom:last-child::after{
+    height: 0px;
+}
+.bar-shadow{
+    box-shadow:0px 2px 5px rgba(0,0,0,.1)
+}
+.switch-small{
+    position: relative;
+    left: 4px;
+}
+
+.change-small{
+    transform: scale(.8);
+}
+
